@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tempat Wisata Terbaik di Indonesia</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/wisata.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Tempat Wisata Terbaik di Indonesia</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#wisata">Tempat Wisata</a></li>
+                    <li><a href="#transaksi">Tiket</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="wisata">
+            <div class="container">
+                <h2>Jelajahi Keindahan Alam dan Budaya Indonesia</h2>
+                <p>
+                    Indonesia terkenal dengan keindahan alam dan keanekaragaman budayanya yang luar biasa, menyediakan banyak destinasi wisata yang memukau.
+                     Mulai dari pantai yang menawan, gunung yang menakjubkan, hingga warisan budaya yang kaya, Indonesia menjanjikan pengalaman liburan yang tak tertandingi. <br><br>
+                </p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/Image/foto-instagramable-di-labuan-bajo-.jpg" alt="Gambar Labuan Bajo" />
+                            <div class="card-body">
+                                <h4>Labuan Bajo</h4>
+                                <p>
+                                    Labuan Bajo adalah sebuah surga tersembunyi yang terletak di Indonesia bagian timur, tepatnya di Kecamatan Komodo, Kabupaten Manggarai Barat, Provinsi Nusa Tenggara Timur.
+                                    Desa ini dikenal sebagai gerbang menuju Taman Nasional Komodo, yang terdaftar sebagai Situs Warisan Dunia UNESCO sejak tahun 1991.
+                                    Labuan Bajo menawarkan keindahan alam yang menakjubkan, termasuk kehidupan laut yang beragam dan populasi komodo, spesies endemik yang dilindungi. Wisatawan dapat menikmati berbagai aktivitas seperti trekking, snorkeling, dan
+                                    perjalanan dengan kapal pesiar untuk menjelajahi keindahan bawah laut dan pulau-pulau eksotis di sekitar Labuan Bajo
+                                </p>
+                                <a href="https://www.indonesia.travel/id/id/destinasi/bali-nusa-tenggara/labuan-bajo.html"
+                                    target="_blank">Pelajari Lebih Lanjut</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/Image/Rinjani-742x440.jpg" alt="Gunung Rinjani" />
+                            <div class="card-body">
+                                <h4>Gunung Rinjani</h4>
+                                <p>
+                                    Gunung Rinjani adalah gunung berapi kedua tertinggi di Indonesia, terletak di Pulau Lombok, Nusa Tenggara Barat. Dengan ketinggian 3.726 meter
+                                    di atas permukaan laut, Gunung Rinjani menawarkan pemandangan alam yang luar biasa, termasuk Danau Segara Anak dan Gunung Barujari, anak gunung yang masih aktif. Pendakian ke puncak gunung ini memerlukan stamina dan kesabaran, namun pemandangan dari atas sangat memukau. Taman Nasional Gunung Rinjani, yang meliputi area sekitar 41.330 hektar, 
+                                    menjadi tujuan wisata favorit bagi pendaki Indonesia dan mancanegara, serta menjadi tempat yang sangat penting untuk menjaga kelestarian alam dan budaya setempat
+                                </p>
+                                <a href="https://www.indonesia.travel/cn/en/destinations/bali-nusa-tenggara/lombok/mount-rinjani.html"
+                                    target="_blank">Pelajari Lebih Lanjut</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <a href="https://www.tokopedia.com/blog/keindahan-alam-indonesia-tvl/?utm_source=google&utm_medium=organic"
+                    class="btn btn-primary">Lihat Lebih Banyak</a>
+            </div>
+        </section>
+
+        <section id="transaksi">
+            <div class="container">
+                <h2>Pesan Tiket Wisata Anda</h2>
+                <p>
+                    Pesan tiket wisata Anda dengan mudah dan aman melalui situs web ini.
+                    Kami menyediakan berbagai pilihan tempat wisata terbaik di Indonesia
+                    dengan harga yang terjangkau. <br><br>
+                </p>
+
+                <form id="transaksiForm">
+                    <div class="form-group">
+                        <label for="tempatWisata">Tempat Wisata</label>
+                        <select id="tempatWisata" name="tempatWisata" class="form-control">
+                            <option value="">Pilih Tempat Wisata</option>
+                            <option value="labuan-bajo" data-price="150000">
+                                labuan-bajo - Rp 150,000
+                            </option>
+                            <option value="gunung Rinjani" data-price="200000">
+                                gunung Rinjani - Rp 200,000
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tanggalKunjungan">Tanggal Kunjungan</label>
+                        <input type="date" id="tanggalKunjungan" name="tanggalKunjungan" class="form-control"
+                            required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jumlahPengunjung">Jumlah Pengunjung</label>
+                        <input type="number" min="1" id="jumlahPengunjung" name="jumlahPengunjung" class="form-control"
+                            required />
+                    </div>
+
+                    <div class="form-group1">
+                        <label for="totalHarga">Total Harga Tiket</label>
+                        <input type="number" id="totalHarga" name="totalHarga" class="form-control" readonly />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Pesan Tiket</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="fleft">© 2024 Golden Indonesia Tour. All rights reserved.</p>
+        <p class="fright">Develop by <span>Arya Syaputra</span></p>
+    </footer>
+
+    <script src="/assets/js/wisata.js"></script>
+</body>
+
+</html>

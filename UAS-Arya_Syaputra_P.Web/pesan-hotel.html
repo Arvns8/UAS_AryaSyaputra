@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemesanan Hotel</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/pesan-hotel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Pesan Hotel Anda <br>Sekarang Juga</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <form id="bookingForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="hotel">Pilih Hotel:</label>
+                    <select id="hotel" name="hotel" required>
+                        <option value="" disabled selected>-- Pilih Hotel Anda --</option>
+
+                        <option value="Hotel Susilo Residence|960000">Hotel Susilo Residence</option>
+                        <option value="Hotel grandkemang|1500000">Hotel grandkemang</option>
+                        <option value="Hotel Oak Tree|2500000">Hotel Oak Tree</option>
+                        <option value="Hotel Arosa|3500000">Hotel Arosa</option>
+                        <option value="Hotel Swiss-Belresidences kalibata|5700000">Hotel Swiss-Belresidences kalibata</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="checkInDate">Tanggal Check-in:</label>
+                    <input type="date" id="checkInDate" name="checkInDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkOutDate">Tanggal Check-out:</label>
+                    <input type="date" id="checkOutDate" name="checkOutDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="roomCount">Jumlah Kamar:</label>
+                    <input type="number" id="roomCount" name="roomCount" min="1" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">No Telepon:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,}" required>
+                    <small><i>Format: Minimal 10 digit angka tanpa spasi atau tanda</i></small>
+                </div>
+                <button type="submit">Pesan Sekarang</button>
+                
+            </form>
+            <div id="successModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Data inputan berhasil!</p>
+                </div>
+              </div>
+        </div>
+
+        <div id="booking-details" class="container">
+            <!-- Detail pemesanan akan ditampilkan di sini -->
+        </div>
+
+        <div class="qris">
+            <h3>QRIS Pembayaran</h3>
+            <h4><i>Silahkan Scan untuk Melakukan Pembayaran !</i></h4>
+            <img id="qrisImage" src="" alt="QRIS">
+        </div>
+
+        <div id="paymentProofInfo" class="payment-proof">
+            <!-- Informasi bukti pembayaran akan ditampilkan di sini -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="fleft">© 2024 Indonesian Tourism. All rights reserved.</p>
+            <p class="fright">Develop by <span>Arya Syaputra</span></p>
+        </div>
+    </footer>
+
+    <script src="pesan-hotel.js"></script>
+
+</body>
+
+</html>
